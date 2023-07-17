@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
+* {
+  box-sizing: content-box;
+  font-family: "Lato", sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  background-color: lightblue;
+}
+
+#markdown {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  height: 100%;
+}
+
+.markdown-editor {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  height: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.previewer {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  background-color: #606060;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+label > FontAwesomeIcon {
+  color: blue;
+}
+
+#preview, #label {
+  width: 70%;
+  box-shadow: 0px 0px 20px black;
+}
+
+code {
+  margin-left: 20px;
+  background-color: rgb(203, 201, 201);
+}
+
+span, textarea {
+  resize: vertical;
+  width: 50%;
+  box-shadow: 0px 0px 20px black;
+  outline: none;
+}
+
+textarea {
+  max-height: 80%;
+  min-height: 20%;
+  height: 100%;
+}
+
+textarea, #preview {
+  background-color: rgb(204, 255, 229);
+  font-family: "Arial Narrow Bold", sans-serif;
+}/*# sourceMappingURL=index.css.map */
